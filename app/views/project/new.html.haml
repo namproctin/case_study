@@ -1,0 +1,20 @@
+= form_tag("/create_project", method: :post) do 
+  %table
+    %tr
+      %td 
+        Technology
+      %td 
+        = text_field_tag :tech 
+    %tr
+      %td 
+        Category
+      %td 
+        = text_field_tag :category
+    %tr
+      %td 
+        Github Repo URL
+      %td 
+        = text_field_tag :url
+    %tr
+      %td 
+        = submit_tag "Add project" 

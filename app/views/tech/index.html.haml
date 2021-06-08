@@ -1,0 +1,7 @@
+%p List of technologies
+%ul
+  - @techs.each do |t| 
+    %li 
+      = link_to t.name, "/#{t.name}" 
+
+= link_to 'Add new Project', "/new"

@@ -1,0 +1,24 @@
+%p 
+  %b Projects
+%table#project-table
+  %th 
+    %tr 
+      %td 
+        %b URL
+      %td 
+        %b stars
+      %td
+        %b forks 
+      %td
+        %b last_updated
+  - @projects.each do |p| 
+    %tr
+      %td.url
+        = link_to p.url
+      %td.stars
+        = p.stars
+      %td.forks
+        = p.forks
+      %td.last_update
+        = p.last_update
+      
